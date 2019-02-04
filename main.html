@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<!--
+
+I've been programming for 10 months and I have learned 75% of Intro to Webpages. 
+
+I'm going to create online coding lessons for made for beginners to learn the basics of HTMl/CSS. Just a simple webpage. 
+
+ Lessons:
+  CSS
+ -background-color
+ -color
+ -borders
+ -padding
+ 
+  HTML
+ -none yet
+ 
+-->
+
+<html>
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <title>KidZ Coding School</title>
+        
+        <style>
+          
+        body{
+          overflow-x: hidden;
+          overflow-y: scroll;
+          background-color: #ffffff;
+          
+          }
+          
+            #web-heading{
+          font-family: 'Acme', sans-serif;
+          color: #ffffff;
+          text-align:center;
+          margin-top: 3%;
+          font-size: 32px;
+          }  
+     
+      
+            
+            #header-box{
+                background-color: #ff3333;
+                margin-left: -2%;
+                margin-top:3%;
+                width: 104%;
+                box-shadow: 0px 4px 5px rgb(0,0,0,0.1);
+                position:fixed;
+            }
+            
+            
+            
+            .navContainer{
+                background-color: rgb(217, 43, 43);
+                margin-left: -2%;
+                margin-top:-2%;
+                padding:6px;
+                width: 104%;
+                height:21px;
+                position:fixed;
+            }
+            
+            .navbtn{
+                font-family: 'Roboto Slab', serif;
+                padding: 24px;
+                margin-left:-1%;
+                
+                color: #ffffff;
+                font-size: 14px;
+                font-weight:bold;
+                transition:0.2s;
+                font-family: 'Arial black';
+                border-top-right-radius: 30px;
+                border-top-left-radius: 30px;
+            }
+            
+            .navbtn:hover{
+               
+               background-color: #ff3333;
+               color: #ffffff;
+               cursor: pointer;
+            }
+            .navbtn.active{
+               background-color: #ff3333;
+               color: white;
+            }
+          
+          
+            p{font-family: 'Nunito', sans-serif; padding:20px;}
+            
+            .page-heading{
+                font-family: 'Nunito', sans-serif;
+                font-size: 30px;
+                text-align: center;
+                border-bottom: solid;
+                border-radius: 3px;
+                border-color: rgb(217, 43, 43);
+            }
+          
+            #c-l{
+                text-align: center;
+                font-family: 'Nunito', sans-serif;
+                font-size: 20px;
+            }
+            
+            #css-btn{
+               background-color: #ff3333; 
+               color: #ffffff;
+               padding: 40px;
+               text-align: center;
+               font-size: 50px;
+               font-family: 'Roboto Slab', serif;
+               font-weight: bold;
+               width:100px;
+               margin-left:0.9em;
+               border-radius:5px;
+               transition: 0.3s;
+            }
+            #html-btn{
+               background-color: #ff3333; 
+               color: #ffffff;
+               padding: 40px;
+               text-align: center;
+               font-size: 50px;
+               font-family: 'Roboto Slab', serif;
+               font-weight: bold;
+               width:130px;
+               margin-left:6.0em;
+               margin-top:-3.57em;
+               border-radius:5px;
+               transition: 0.3s;
+            }
+            #css-btn:hover{
+               box-shadow: 0px 5px 20px rgb(0,0,0,0.3);
+               cursor: pointer;
+            }
+            #html-btn:hover{
+               box-shadow: 0px 5px 20px rgb(0,0,0,0.3);
+               cursor:pointer;
+            }
+            
+            #f-program-heading{
+                background-color: #ff3333;
+                color: #ffffff;
+                font-family: 'Nunito', sans-serif;
+                font-size: 28px;  
+                padding:0px;
+                text-align:center;
+                border-radius:50px;
+            }
+            
+            #f-lesson-box{
+                padding:5px;
+                border:solid;
+                border-width:3px;
+                border-radius:147px;
+                border-color: #e3e3e3;
+                transition: 0.3s;
+            }
+            #f-lesson-box:hover{
+                padding:5px;
+                border:solid;
+                border-width:3px;
+                border-radius:147px;
+                border-color: #ff3333;
+                cursor: pointer;
+                background:none;
+            }
+            
+            .f-l-type{
+                background-color: #ff3333;
+                color: #ffffff;
+                font-family: 'Nunito', sans-serif;
+                font-size: 28px; 
+                padding:20px;
+                border-radius:5px;
+                width:55px;
+                margin-left:58px;
+            }
+            
+            .f-l-name{
+                float:right;
+                margin-top:-107px;
+                margin-right:233px;
+                font-size:30px;
+                color:black;
+            }
+            
+            .l-btn{
+               background-color: #ff3333;
+                color: #ffffff;
+                font-family: 'Nunito', sans-serif;
+                font-size: 28px; 
+                padding: 20px; 
+                border-radius: 50px;
+                transition: 0.3s;
+            }
+            .l-btn:hover{
+               box-shadow: 0px 5px 20px rgb(0,0,0,0.3);
+               cursor:pointer;
+            }
+            
+            .code-background{
+            background-color:#e3e3e3;
+            color:#404040;
+            padding:5px;
+            border-left:solid;
+            border-color:rgb(217, 43, 43);
+            border-radius:3px;
+            line-height:1.8;
+            font-family: 'Source Code Pro', monospace;
+        }
+        #help{
+         color: #ff3333;
+         } 
+        
+         .backbtn{
+             background-color: #ff3333; 
+             color:#ffffff;
+             padding:5px;
+             border-radius:3px;
+             font-family: 'Nunito', sans-serif;
+             transition:0.3s;
+         }
+        .backbtn:hover{
+               box-shadow: 0px 5px 20px rgb(0,0,0,0.3);
+               cursor:pointer;
+            }
+            
+            .code-editor{
+            background-color:#e3e3e3;
+            color:#404040;
+            width:300px;
+            height:236px;
+            border-radius:10px;
+            padding:10px;
+            line-height:1.8;
+            overflow-y:scroll;
+            font-family: 'Source Code Pro', monospace;
+        }
+        
+        #border-color-example{
+            border:solid;
+            border-color:#ff3333;
+            padding:0px;
+        }
+        
+        #border-radius-example{
+        border:solid;
+        border-color:#ff3333;
+        border-radius:10px;
+        padding:0px;
+        }
+        
+        #dashed{
+            border:dashed;
+            padding:0px;
+        }
+        #dotted{
+            border:dotted;
+            padding:0px;
+        }
+        #inset{
+            border:inset;
+            padding:0px;
+        }
+        #outset{
+            border:outset;
+            padding:0px;
+        }
+        #solid{
+            border:solid;
+            padding:0px;
+        }
+        #ridge{
+            border:ridge;
+            padding:0px;
+        }
+        #groove{
+            border:groove;
+            padding:0px;
+        }
+        
+        #p-example{
+            background-color:#ff3333;
+            padding:30px;
+        }
+        
+        </style>
+        
+    </head>
+    <body>
+    <div id = 'header-box'>
+    
+    <h1 id = 'web-heading'>KidZ Coding School</h1>
+   </div>
+    
+    
+    
+        <nav class = 'navContainer'>
+    
+        <a class = 'navbtn' onclick="switchtab(event, '1')">Home</a>
+        <a class = 'navbtn' onclick="switchtab(event, '2')">Lessons</a>
+
+    </nav>
+    <br><br><br><br><br><br>
+    
+    
+    
+    
+    <div id = '1' class = 'box'>
+        
+        
+        <h2 class = 'page-heading'>Home</h2>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget augue sollicitudin ligula dapibus auctor sollicitudin egestas ex. Donec volutpat sodales molestie. Quisque eleifend mattis dolor, ut malesuada enim dictum sed. Nam non diam ut nulla faucibus rutrum quis nec leo. Proin facilisis venenatis libero, et scelerisque est. Cras feugiat sapien quis metus hendrerit elementum. In convallis nisl ultrices ante suscipit, in porta ligula ultrices.</p>
+        
+        
+        <h2 id = 'f-program-heading'>Featured Lesson</h2>
+        
+        <div id = 'f-lesson-box'  onclick="switchtab(event, '8')">
+            <h3 class = 'f-l-type'>CSS</h3>
+            <p class = 'f-l-name'>Borders</p>
+        </div>
+        
+    </div>
+    
+    <div id = '2' class = 'box'>
+        
+        <h2 class = 'page-heading'>Lessons</h2>
+        
+        <h4 id = 'c-l'>Choose your lesson below.</h4>
+        
+        
+            <h1 id = 'css-btn'  onclick="switchtab(event, '4')">CSS</h1>
+            <h1 id = 'html-btn'  onclick="switchtab(event, '5')">HTML</h1>
+            
+        
+        
+    </div>
+    
+    <div id = '3' class = 'box'>Featured Lesson here</div> 
+    
+    <div id = '4' class = 'box'>
+    <h2 class = 'page-heading'>CSS Lessons</h2>
+        
+        <h1 class = 'l-btn' onclick="switchtab(event, '6')">background-color</h1>
+        <h1 class = 'l-btn'  onclick="switchtab(event, '7')">color</h1>
+        <h1 class = 'l-btn' onclick="switchtab(event, '8')">Borders</h1>
+        <h1 class = 'l-btn' onclick="switchtab(event, '9')">padding</h1>
+        
+    </div> 
+    
+    <div id = '5' class = 'box'>
+    <h2 class = 'page-heading'>HTML Lessons</h2>
+        
+        <h1 class = 'l-btn'>Headings</h1>
+        <h1 class = 'l-btn'>Class & id</h1>
+        <h1 class = 'l-btn'>Links</h1>
+        <h1 class = 'l-btn'>br & hr tags</h1>
+        
+        
+    </div> 
+    
+    <div id = '6' class = 'box'>
+        <p> Let's start off with <b>background-color:;</b> It's really simple all it does is color the background of the object you assign it to such as if you have: </p>
+
+    
+    <div class = 'code-background'>
+         body {<br>
+         background-color: white;
+         <br>
+         } 
+    </div>
+    
+    <p>You will then have a white background for your web page although you can assign it to other tags like <b>h1</b> tags example:</p>
+        
+        <div class = 'code-background'>
+         h1 {<br>
+         background-color: red;
+         <br>
+         } 
+    </div>
+        
+        <p>Then you will have a red background for your <b>h1</b> tag So basically you can put <b>background-color:;</b> in any CSS styling! It's that simple!</p>
+        
+        <a class = 'backbtn'  onclick="switchtab(event, '4')">Back</a>
+        
+    </div>
+    
+    <div id = '7' class = 'box'>
+        <p>Color is pretty simple it just colors the text that you asign it to such as if you want red text for a heading in your webpage you would do the following</p>
+
+    
+    <div class = 'code-background'>
+          h1 {<br>
+         color: red;
+         <br>
+         } 
+    </div>
+    
+    <p>It would color the text red or whatever color you want it such as blue</p>
+    
+    <div class = 'code-background'>
+         h1 {<br>
+         color: blue;
+         <br>
+         } 
+         
+    </div>
+    <p>thats about all there is to color basically what it does is color the text you asign it to for instance if I want the word <a id = 'help'>HELP</a> to be light red I would just do the code</p>
+    <div class = 'code-background'>
+          #help{<br>
+         color: #ff3333;
+         <br>
+         } 
+         
+    </div>
+    <br>
+    <a class = 'backbtn'  onclick="switchtab(event, '4')">Back</a>
+    </div>
+    
+    <div id = '8' class = 'box'>
+       <p>Borders are useful for many things and there are so many different styles lets look at all the styles below</p>
+
+    
+    <p id = 'dashed'>dashed</p>
+    <p id = 'dotted'>dotted</p>
+    <p id = 'inset'>inset</p>
+    <p id = 'outset'>outset</p>
+    <p id = 'solid'>solid</p>
+    <p id = 'ridge'>ridge</p>
+    <p id = 'groove'>groove</p>
+    
+    
+    
+    <p>Borders are also pretty simple to use for instance here is  how to use borders in CSS. Depending on the id you used in your HTML (we will learn about it in another lesson)</p>
+        
+        <div class = 'code-editor'>
+         #dashed{<br>
+            border:dashed;<br>
+            
+        }<br>
+        #dotted{<br>
+            border:dotted;<br>
+        }<br>
+        #inset{<br>
+            border:inset;<br>
+        }<br>
+        #outset{<br>
+            border:outset;<br>
+        }<br>
+        #solid{<br>
+            border:solid;<br>
+        }<br>
+        #ridge{<br>
+            border:ridge;<br>
+        }<br>
+        #groove{<br>
+            border:groove;<br>
+        }<br>
+    </div>
+        
+        <p>Now lets show you how to color borders well thats simple you use <b>border-color:;</b> example:</p>
+        
+        <div class = 'code-background'>
+            #border-color-example{<br>
+            border:solid;<br>
+            border-color:#ff3333;<br>
+            }<br>
+        </div>
+        
+        <p id = 'border-color-example'>A red border</p>
+        
+        <p>One lest thing rounding the corners using <b>border-radius:;</b> example below:</p>
+        
+        <div class = 'code-background'>
+            #border-radius-example{<br>
+            border:solid;<br>
+            border-color:#ff3333;<br>
+            border-radius:10px;<br>
+            }<br>
+        </div>
+        
+        <p id = 'border-radius-example'>A red and rounded border</p> 
+    <br>
+     <a class = 'backbtn'  onclick="switchtab(event, '4')">Back</a>
+    </div>
+    
+    <div id = '9' class = 'box'>
+        
+    <p>Padding adds spce to your elament such as this webpage heading as you can see has space from the top and bottom of it's background AKA padding look at the example below</p>
+
+        
+        <div class = 'code-background'>
+            #example{<br>
+            background-color:#ff3333;<br>
+            padding:30px;<br>
+         } 
+    </div>
+        
+        <p id ='p-example'>Example</p>
+        
+        <p>It's that simple to use!</p>
+        <a class = 'backbtn'  onclick="switchtab(event, '4')">Back</a>
+    </div>
+    
+    
+    
+    
+    
+    <!-- code for making the tabs work -->
+    <script>
+        
+        function switchtab(evt, btnName) {
+    
+    var i, box, navbtn;
+    
+    box = document.getElementsByClassName("box");
+    
+    for (i = 0; i < box.length; i++) {
+        box[i].style.display = "none";
+    }
+    
+    navbtn = document.getElementsByClassName("navbtn");
+    
+    for (i = 0; i < navbtn.length; i++) {
+       navbtn[i].className = navbtn[i].className.replace(" active", "");
+    }
+    
+    document.getElementById(btnName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    switchtab(event, "1")
+        
+    </script>
+    
+    
+    </body>
+</html>
